@@ -28,7 +28,7 @@ router.post('/tarefaNova', (req, res) =>{
 router.put('/atualização/:id', (req, res) =>{
     const id = req.params.id
     const NovasTarefas = req.body
-    ListaTarefas[id] = NovasTarefas
+    ListaTarefas[id] = NovasTarefas.Novo
     res.json({mensagem:`A tarefa do id ${id} foi substituida`})
 })
 
